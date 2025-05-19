@@ -5,5 +5,15 @@ class Node:
         self.value = value
         self.next = None
 
-node = Node(10)
-print(node)
+class LinkedList:
+    def __init__(self, value):
+        new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+        self.length = 1
+
+
+ll = LinkedList(10)
+print(ll.head.value)
+print(ll.tail.value)
+print(ll.length)
