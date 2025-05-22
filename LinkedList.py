@@ -130,6 +130,8 @@ class LinkedList:
         self.length -= 1
         return popped_node
     
+    # Time Complexity - O(N)
+    # Space Complexity - O(1)
     def remove(self, index):
         if index == 0:
             self.pop_first()
